@@ -18,15 +18,13 @@ import com.example.demo.model.City;
 
 /**
     * @ClassName: CityService
-    * @Description: TODO(这里用一句话描述这个类的作用)
+    * @Description: CityService 业务逻辑处理类
     * @author wjk
     * @date 2018年5月10日
     *
     */
 @Service
-public class CityService {
-	@Autowired
-	private CityMapper cityMapper;
+public interface CityService {
 	/**
 	 * 
 	    * @Title: insertValues
@@ -35,22 +33,16 @@ public class CityService {
 	    * @return void    返回类型
 	    * @throws
 	 */
-	public void insertValues(City city) {
-		cityMapper.insert(city);
-	}
-	
-	    /**
+	public void insertValues(City city);
+	/**
+	 * 
 	    * @Title: listCity
 	    * @Description: TODO(这里用一句话描述这个方法的作用)
 	    * @param @return    参数
 	    * @return List<City>    返回类型
 	    * @throws
-	    */
-	    
-	public List<City> listCity() {
-		return (List<City>) cityMapper.selelctList();
-	}
-
+	 */
+	public List<City> listCity();
 	/**
 	 * 
 	    * @Title: selectByPrimaryKey
@@ -60,7 +52,5 @@ public class CityService {
 	    * @return City    返回类型
 	    * @throws
 	 */
-	public City  selectByPrimaryKey(int primaryKey) {
-		return  cityMapper.selectByPrimaryKey(primaryKey);
-	}
+	public City  selectByPrimaryKey(int primaryKey);
 }
