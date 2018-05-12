@@ -28,7 +28,7 @@ public interface CityService {
 	/**
 	 * 
 	    * @Title: insertValues
-	    * @Description: TODO(这里用一句话描述这个方法的作用)
+	    * @Description: 插入数据
 	    * @param @param city    参数
 	    * @return void    返回类型
 	    * @throws
@@ -37,7 +37,7 @@ public interface CityService {
 	/**
 	 * 
 	    * @Title: listCity
-	    * @Description: TODO(这里用一句话描述这个方法的作用)
+	    * @Description: list  city  
 	    * @param @return    参数
 	    * @return List<City>    返回类型
 	    * @throws

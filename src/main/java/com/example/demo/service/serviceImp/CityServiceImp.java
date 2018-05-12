@@ -20,7 +20,7 @@ import com.example.demo.service.CityService;
 
 /**
     * @ClassName: CityServiceImp
-    * @Description: TODO(这里用一句话描述这个类的作用)
+    * @Description: service 实现类
     * @author wjk
     * @date 2018年5月12日
     *
